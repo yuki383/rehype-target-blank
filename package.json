@@ -1,0 +1,15 @@
+{
+  "name": "rehype-target-blank",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:yuki383/rehype-target-blank.git",
+  "author": "yuu383 <yuukikokubo.pg@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "yarn run build",
+    "build": "tsc -noEmit false"
+  }
+}
