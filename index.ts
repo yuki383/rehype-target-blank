@@ -12,12 +12,10 @@ function attacher() {
 
     function visitor(node: Node) {
       if (is(node, { tagName: "a" })) {
-        Object.assign(node, {
-          properties: {
-            target: "_blank",
-            rel: "noopener",
-          },
-        });
+        let props: any = node.properties;
+
+        props.target = "_blank";
+        props.rel = "noopener noreferrer";
       }
     }
   }
